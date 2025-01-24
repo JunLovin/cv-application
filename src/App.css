@@ -1,3 +1,35 @@
+/* INFO: This is Header section */
+
+header {
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid var(--gray);
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    background: linear-gradient(to left, #ac2323, #c3133b, #d70058, #e70079, #f1009f, #f6009a, #fb0094, #ff008f, #ff475f, #ff8a28, #ffc800, #dfff09);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header nav img {
+    cursor: pointer;
+    background: linear-gradient(to left, #ac2323, #c3133b, #d70058, #e70079, #f1009f, #f6009a, #fb0094, #ff008f, #ff475f, #ff8a28, #ffc800, #dfff09);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* INFO: This is the main section */
 main {
     width: 100%;
     height: 100vh;
