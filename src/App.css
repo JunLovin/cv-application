@@ -1,0 +1,180 @@
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inputs-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    height: 100%;
+    border-right: 3px solid var(--black);
+    overflow: scroll;
+    padding: 1rem 0;
+}
+
+.inputs-section .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 1rem 0;
+    border: 1px solid var(--black);
+    border-radius: 1rem;
+    padding: 2rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inputs-section .card .input {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.inputs-section .card .input label {
+    font-weight: 550;
+    margin-bottom: .2rem;
+    font-size: 1.05rem;
+}
+
+.inputs-section .card .input input {
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid var(--gray);
+    appearance: textfield;
+    font-size: .88rem;
+}
+
+.inputs-section .card .input input:focus {
+    outline: none;
+}
+
+/* INFO: This is the preview section */
+
+.preview-section {
+    display: flex;
+    justify-content: center;
+    width: 90rem;
+    height: 100%;
+    background-color: var(--gray);
+}
+
+.preview-section .preview-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    background-color: var(--white);
+    padding: 1rem 2rem;
+    overflow: scroll;
+}
+
+.preview-section .preview-container .preview-header {
+    display: flex;
+    justify-content: space-between;
+    width: 45rem;
+    height: 12rem;
+    margin: 0 auto;
+}
+
+.preview-section .preview-container .preview-header .pfp-preview {
+    align-self: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: var(--gray);
+    margin: 0 auto;
+}
+
+.preview-section .preview-container .preview-header .pfp-preview img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.preview-section .preview-container .preview-header .preview-header-text {
+    margin-top: .5rem;
+    width: 68%;
+    text-align:center;
+}
+
+.preview-section .preview-container .preview-body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.preview-section .preview-container .preview-body h5 {
+    color: var(--gray);
+}
+
+.preview-section .preview-container .preview-body .preview-body-decoration {
+    width: 15%;
+    border-right: 1px solid #02988d;
+}
+
+.preview-section .preview-container .preview-body .preview-body-container {
+    padding-left: 1rem;
+}
+
+.preview-section .preview-container .preview-body .preview-body-container .preview-body-about {
+    margin-top: 0;
+}
+
+.preview-section .preview-container .preview-body .preview-body-container div {
+    margin: 1rem 0;
+}
+
+.preview-section .preview-container .preview-body .preview-body-container .preview-body-school-info {
+    margin: 0 0 .5rem 0;
+}
+
+.preview-section .preview-container .preview-body .preview-body-container .preview-body-work-info {
+    margin: 0 0 .5rem 0;
+}
+
+.preview-section .preview-container .preview-body .preview-body-container ul li::marker {
+    font-size: 1.5rem;
+    color: #02988d;
+}
+
+.preview-section .preview-container .preview-body .preview-body-container p {
+    max-width: 40rem;
+    overflow: auto;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+}
+
+textarea {
+    width: 21rem;
+    height: 8rem;
+    font-family: var(--apple-font);
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+button {
+    width: 70%;
+    min-height: 2.2rem;
+    background: #EEEEEE;
+    border: 3px solid var(--black);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #DDDDDD;
+}
+
+.preview-header-text-name {
+    font-size: 2rem;
+}
