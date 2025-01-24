@@ -176,5 +176,20 @@ button:active {
 }
 
 .preview-header-text-name {
+    margin-top: 1rem;
     font-size: 2rem;
+    text-align: right;
+}
+
+.preview-header-text-email, .preview-header-text-phone, .preview-header-text-address {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: end;
+    margin: .3rem 0;
+    font-weight: 550;
+}
+
+.preview-header-text-email img, .preview-header-text-phone img, .preview-header-text-address img {
+    margin-right: .5rem;
 }
