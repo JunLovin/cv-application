@@ -2,6 +2,11 @@ import { useState } from 'react';
 import '../App.css';
 import CardTemplate from './CardTemplate';
 import Input from './Input';
+import Mail from '../../public/mail.svg';
+import Phone from '../../public/phone.svg';
+import Address from '../../public/address.svg';
+
+
 function CvDotCom() {
     const [inputs, setInputs] = useState(
         {
@@ -100,7 +105,7 @@ function CvDotCom() {
 
                     {/* INFO: This is the general information section */}
                     <CardTemplate title="General Information">
-                        <Input type="text" id="name" placeholder={inputs.name} value={inputs.name} label="Name and Last Name" handleChange={handleChange} maxLength={20}/>
+                        <Input type="text" id="name" placeholder={inputs.name} value={inputs.name} label="Name and Last Name" handleChange={handleChange} maxLength={30}/>
                         <Input type="email" id="email" placeholder={inputs.email} value={inputs.email} label="Email" handleChange={handleChange}/>
                         <Input type="number" id="phone" placeholder={inputs.phone} value={inputs.phone} label="Phone Number" handleChange={handleChange}/>
                         <Input type="text" id="address" placeholder={inputs.address} value={inputs.address} label="Address" handleChange={handleChange} maxLength={30}/>
@@ -182,9 +187,9 @@ function CvDotCom() {
                             </div>
                             <div className="preview-header-text">
                                 <h2 className='preview-header-text-name'>{inputs.name}</h2>
-                                <h4>{inputs.email}</h4>
-                                <h4>{inputs.phone}</h4>
-                                <h4>{inputs.address}</h4>
+                                <h4 className="preview-header-text-email"><img src={Mail} alt="mail" />{inputs.email}</h4>
+                                <h4 className="preview-header-text-phone"><img src={Phone} alt="phone" />{inputs.phone}</h4>
+                                <h4 className="preview-header-text-address"><img src={Address} alt="address" />{inputs.address}</h4>
                             </div>
                         </div>
                         <div className="preview-body">
