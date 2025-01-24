@@ -1,11 +1,11 @@
 import './App.css'
-import GeneralInfo from './components/GeneralInfo'
+import CvDotCom from './components/CvDotCom'
 
 function App() {
 
   return (
     <>
-    <GeneralInfo/>
+    <CvDotCom/>
     </>
   )
 }
