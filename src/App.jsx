@@ -1,5 +1,5 @@
 import './App.css'
-import CvDotCom from './components/CvDotCom'
+import CvDotCom from './components/CVDotCom'
 
 function App() {
 
