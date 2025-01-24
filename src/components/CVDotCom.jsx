@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../App.css';
+import Header from './Header';
 import CardTemplate from './CardTemplate';
 import Input from './Input';
 import Mail from '../../public/mail.svg';
@@ -98,6 +99,7 @@ function CvDotCom() {
 
     return (
         <>
+            <Header />
         <main>
 
             {/* INFO: This is the inputs section */}
