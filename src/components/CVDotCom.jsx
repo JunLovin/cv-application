@@ -206,8 +206,10 @@ function CvDotCom() {
                             <div className="preview-body-decoration"></div>
                             <div className="preview-body-container">
                                 <div className="preview-body-about">
-                                    <h3>About Me</h3>
-                                    <p>{inputs.aboutMe}</p>
+                                    <ul>
+                                        <li><h3>About Me</h3></li>
+                                        <p>{inputs.aboutMe}</p>
+                                    </ul>
                                 </div>
                                 <div className="preview-body-school">
                                     <ul>

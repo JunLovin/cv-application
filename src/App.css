@@ -180,6 +180,10 @@ main {
     margin: 0 0 .5rem 0;
 }
 
+.preview-section .preview-container .preview-body .preview-body-container ul li {
+    margin: 0 0 .5rem 0;
+}
+
 .preview-section .preview-container .preview-body .preview-body-container ul li::marker {
     font-size: 1.5rem;
     color: #02988d;
