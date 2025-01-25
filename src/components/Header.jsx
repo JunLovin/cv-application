@@ -1,5 +1,5 @@
-import '../App.css';
-import githubIcon from '../../public/github.svg';
+import '@styles/App.css';
+import githubIcon from '@public/github.svg';
 
 function Header() {
 

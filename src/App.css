@@ -157,7 +157,7 @@ main {
 
 .preview-section .preview-container .preview-body .preview-body-decoration {
     width: 15%;
-    border-right: 1px solid #02988d;
+    border-right: 2px solid #02988d;
 }
 
 .preview-section .preview-container .preview-body .preview-body-container {
@@ -185,7 +185,7 @@ main {
 }
 
 .preview-section .preview-container .preview-body .preview-body-container ul li::marker {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     color: #02988d;
 }
 

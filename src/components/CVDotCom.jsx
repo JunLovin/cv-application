@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import '../App.css';
+import '@styles/App.css';
 import Header from './Header';
 import CardTemplate from './CardTemplate';
 import Input from './Input';
-import Mail from '../../public/mail.svg';
-import Phone from '../../public/phone.svg';
-import Address from '../../public/address.svg';
+import Mail from '@public/mail.svg';
+import Phone from '@public/phone.svg';
+import Address from '@public/address.svg';
 
 
 function CvDotCom() {
