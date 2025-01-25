@@ -20,6 +20,7 @@ header nav a {
     background: linear-gradient(to left, #ac2323, #c3133b, #d70058, #e70079, #f1009f, #f6009a, #fb0094, #ff008f, #ff475f, #ff8a28, #ffc800, #dfff09);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
 }
 
 header nav img {
@@ -60,6 +61,14 @@ main {
     border-radius: 1rem;
     padding: 2rem 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inputs-section .card .card-close {
+    display: flex;
+    justify-content: end;
+    width: 90%;
+    height: 1rem;
+    cursor: pointer;
 }
 
 .inputs-section .card .input {
@@ -201,6 +210,7 @@ button {
     border: 3px solid var(--black);
     border-radius: 1rem;
     cursor: pointer;
+    margin: 1rem 0;
 }
 
 button:active {
