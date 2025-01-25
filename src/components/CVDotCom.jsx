@@ -97,6 +97,14 @@ function CvDotCom() {
         );
     }
 
+    const handleCloseSchoolInfo = (id) => {
+        setSchoolSections(prevSections => prevSections.filter(section => section.id !== id));
+    }
+
+    const handleCloseWorkInfo = (id) => {
+        setWorkSections(prevSections => prevSections.filter(section => section.id !== id));
+    }
+
     return (
         <>
             <Header />
@@ -107,7 +115,7 @@ function CvDotCom() {
 
                     {/* INFO: This is the general information section */}
                     <CardTemplate title="General Information">
-                        <Input type="text" id="name" placeholder={inputs.name} value={inputs.name} label="Name and Last Name" handleChange={handleChange} maxLength={30}/>
+                        <Input type="text" id="name" placeholder={inputs.name} value={inputs.name} label="Name and Last Name" maxLength={30}/>
                         <Input type="email" id="email" placeholder={inputs.email} value={inputs.email} label="Email" handleChange={handleChange}/>
                         <Input type="number" id="phone" placeholder={inputs.phone} value={inputs.phone} label="Phone Number" handleChange={handleChange}/>
                         <Input type="text" id="address" placeholder={inputs.address} value={inputs.address} label="Address" handleChange={handleChange} maxLength={30}/>
@@ -120,7 +128,7 @@ function CvDotCom() {
 
                     {/* INFO: This is the school information section */}
                     {schoolSections.map((section) => (
-                        <CardTemplate key={section.id} title="School Information">
+                        <CardTemplate key={section.id} title="School Information" handleClose={() => handleCloseSchoolInfo(section.id)}>
                             <Input 
                                 type="text" 
                                 id="schoolName" 
@@ -149,7 +157,7 @@ function CvDotCom() {
 
                     {/* INFO: This is the work experience section */}
                     {workSections.map((section) => (
-                        <CardTemplate key={section.id} title="Work Experience">
+                        <CardTemplate key={section.id} title="Work Experience" handleClose={() => handleCloseWorkInfo(section.id)}>
                             <Input
                                 type="text"
                                 id="companyName"
