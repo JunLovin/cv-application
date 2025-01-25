@@ -17,7 +17,7 @@ export default defineConfig({
       },
       {
         find: '@styles',
-        replacement: path.resolve(path.join(__dirname, 'src'))
+        replacement: path.resolve(path.join(__dirname, 'src/styles'))
       },
       {
         find: '@public',
